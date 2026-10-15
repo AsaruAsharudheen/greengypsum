@@ -151,16 +151,7 @@ export default function Navbar() {
               </div>
             </div>
             
-            {/* Bottom decoration/image if needed, sticking to the design provided */}
-            <div className="h-48 relative w-full border-t-4 border-brand-primary shrink-0">
-              <Image
-                src="/images/gallery-1.webp"
-                alt="Menu footer image"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-black/10" />
-            </div>
+
           </motion.div>
         )}
       </AnimatePresence>
