@@ -12,7 +12,8 @@ import ScrollProgress from '@/components/ScrollProgress';
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -26,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.variable} font-sans antialiased bg-brand-white text-brand-charcoal`}>
+    <html lang="en" className={montserrat.variable}>
+      <body className={`${montserrat.className} font-sans antialiased bg-brand-white text-brand-charcoal`}>
         <ScrollProgress />
         <SplashScreen />
         <NextTopLoader 
